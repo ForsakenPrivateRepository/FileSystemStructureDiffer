@@ -4,4 +4,7 @@ getDirectory() {
     echo $1
 }
 
-getDirectory $(pwd)
+for index in 1 2 3 4 5
+do
+    getDirectory $(pwd)
+done
