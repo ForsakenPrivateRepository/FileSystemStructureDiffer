@@ -18,6 +18,11 @@ main() {
         mkdir $index
     done
 
+    for directory in $(ls);
+    do
+        echo $directory
+    done
+
     cd $currentDirectory
     rm -rf $testDirectory
 }
