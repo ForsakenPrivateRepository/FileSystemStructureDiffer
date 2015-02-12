@@ -6,17 +6,13 @@
  */
 
 #include <cstdlib>
+#include "Comparator.h"
 
 using namespace std;
 
-class Main{
-  public:
-      Main() {}
-};
-
 int main () {
     for (int i = 1000; i > 0; i--) {
-        Main* main = new Main;
+        Comparator* main = new Comparator;
     }
 
     return 0;
