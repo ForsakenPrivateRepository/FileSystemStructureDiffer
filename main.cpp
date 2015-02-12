@@ -9,11 +9,15 @@
 
 using namespace std;
 
-/*
- * 
- */
-int main(int argc, char** argv) {
+class Main{
+  public:
+      Main() {}
+};
+
+int main () {
+    for (int i = 1000; i > 0; i--) {
+        Main* main = new Main;
+    }
 
     return 0;
 }
-
