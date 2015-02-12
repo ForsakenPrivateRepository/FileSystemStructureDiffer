@@ -5,17 +5,21 @@ main() {
         echo $1
     }
 
-    mkdir samples
-    cd samples
+    currentDirectory=$(pwd)
+    getDirectory $currentDirectory
 
-    for index in 1 2 3 4 5
+    testDirectory=samples;
+
+    mkdir $testDirectory
+    cd $testDirectory
+
+    for index in $(seq 1 100);
     do
         mkdir $index
-        getDirectory $(pwd)
     done
 
-    cd ..
-    rm -rf samples
+    cd $currentDirectory
+    rm -rf $testDirectory
 }
 
 main
